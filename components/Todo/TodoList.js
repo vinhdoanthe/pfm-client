@@ -12,7 +12,7 @@ const TodoItems = ({todos}) => {
   return (
     todos.map(todo => {
       return (
-        <TodoItem key={todo.id} id={todo.id} content={todo.content} />
+        <TodoItem item={todo} />
       )
     })
   )
@@ -29,11 +29,11 @@ const todos = [
   }
 ]
 
-const TodoList = () => {
+const TodoList = ({todos}) => {
   return (
     <>
       <FilterArea />
-      <TodoItems todos={todos}/>
+      <TodoItems todos={todos.items}/>
     </>
   )
 }
@@ -41,5 +41,5 @@ const TodoList = () => {
 export {
   FilterArea,
   TodoItems,
-  TodoList
+  TodoList as default
 }

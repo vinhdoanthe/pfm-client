@@ -8,7 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "admin-lte": "^3.0.5",
+    "antd": "^4.6.6",
     "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-bootstrap": "^1.3.0",
